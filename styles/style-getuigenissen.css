@@ -322,21 +322,21 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1 {
-  background-image: url("../../images/bg2-mobiel.jpg");
+  background-image: url("../images/bg2-mobiel.jpg");
   background-size: 100%;
   background-repeat: repeat-y;
 }
 
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url("../../images/bg2-tablet.jpg");
+    background-image: url("../images/bg2-tablet.jpg");
     background-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bg1 {
-    background-image: url("../../images/bg2-desktop.jpg");
+    background-image: url("../images/bg2-desktop.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -344,7 +344,7 @@ achtergrond
 
 @media (min-width: 1200px) {
   .bg1 {
-    background-image: url("../../images/bg2-grotedesktop.jpg");
+    background-image: url("../images/bg2-grotedesktop.jpg");
     background-size: 100%;
   }
 }
@@ -359,7 +359,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../../images/snake-2.png");
+    background-image: url("../images/snake-2.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 700px;

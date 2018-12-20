@@ -109,20 +109,20 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1{
-   background-image: url("../../images/bg1-mobiel.jpg");
+   background-image: url("../images/bg1-mobiel.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-width: $breekpunt2) {
-        background-image: url("../../images/bg1-tablet.jpg");
+        background-image: url("../images/bg1-tablet.jpg");
         background-size: 100%;
     }
     @media (min-width: $breekpunt3){
-        background-image: url("../../images/bg1-desktop.jpg");
+        background-image: url("../images/bg1-desktop.jpg");
         background-size: 100%;
     }
     @media (min-width: $breekpunt4){
-        background-image: url("../../images/bg1-grotedesktop.jpg");
+        background-image: url("../images/bg1-grotedesktop.jpg");
         background-size: 100%;
     }
 }
@@ -134,7 +134,7 @@ illustratie sjaal
 display: none;
     @media (min-width: $breekpunt3){
     display: block;
-    background-image: url("../../images/snake-4.png");
+    background-image: url("../images/snake-4.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;}

@@ -109,21 +109,21 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1{
-   background-image: url("../../images/bg2-mobiel.jpg");
+   background-image: url("../images/bg2-mobiel.jpg");
     background-size: 100%;
     background-repeat: repeat-y;
 
     @media (min-width: $breekpunt2) {
-        background-image: url("../../images/bg2-tablet.jpg");
+        background-image: url("../images/bg2-tablet.jpg");
         background-size: 100%;
     }
     @media (min-width: $breekpunt3){
-        background-image: url("../../images/bg2-desktop.jpg");
+        background-image: url("../images/bg2-desktop.jpg");
         background-size: 100%;
         background-repeat: no-repeat;
     }
     @media (min-width: $breekpunt4){
-        background-image: url("../../images/bg2-grotedesktop.jpg");
+        background-image: url("../images/bg2-grotedesktop.jpg");
         background-size: 100%;
     }
 }
@@ -135,7 +135,7 @@ illustratie sjaal
 display: none;
     @media (min-width: $breekpunt3){
     display: block;
-    background-image: url("../../images/snake-3.png");
+    background-image: url("../images/snake-3.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;}
@@ -207,7 +207,7 @@ INTRO VOORKOMEN
 VOORKOMEN
 ************************************************************************* */
 .vermijden-img{
-    background-image: url("../../images/vermijden-colltrui.png");
+    background-image: url("../images/vermijden-colltrui.png");
     width: 200px;
     height: 200px;
     margin-left: 60px;
@@ -232,7 +232,7 @@ VOORKOMEN
     }
 }
 .colltrui{
-    background-image: url("../../images/vermijden-colltrui.png");
+    background-image: url("../images/vermijden-colltrui.png");
     background-size: 100%;
     background-color: $color4;
     @media (min-width: $breekpunt3){
@@ -240,7 +240,7 @@ VOORKOMEN
     }
 }
 .rits{
-    background-image: url("../../images/vermijden-rits.png");
+    background-image: url("../images/vermijden-rits.png");
     background-size: 100%;
     background-color: $color4;
     @media (min-width: $breekpunt3){
@@ -248,7 +248,7 @@ VOORKOMEN
     }
 }
 .haardos{
-    background-image: url("../../images/vermijden-langehaardos.png");
+    background-image: url("../images/vermijden-langehaardos.png");
     background-size: 100%;
     background-color: $color4;
     @media (min-width: $breekpunt3){
@@ -257,7 +257,7 @@ VOORKOMEN
     }
 }
 .kussen{
-    background-image: url("../../images/vermijden-kersenpitkussen.png");
+    background-image: url("../images/vermijden-kersenpitkussen.png");
     background-size: 100%;
     background-color: $color4;
     @media (min-width: $breekpunt3){
