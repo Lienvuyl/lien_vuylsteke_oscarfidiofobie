@@ -84,7 +84,7 @@ navigatie desktop
     @media (min-width: $breekpunt3) {
             display: block;
             padding-top: 70px;
-            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+            padding-left: 30px;
     
         }
 }
@@ -109,21 +109,21 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1{
-   background-image: url("../images/bg2-mobiel.jpg");
+   background-image: url("../../images/bg1-mobiel.jpg");
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
 
     @media (min-width: $breekpunt2) {
-        background-image: url("../images/bg2-tablet.jpg");
+        background-image: url("../../images/bg1-tablet.jpg");
         background-size: 100%;
     }
     @media (min-width: $breekpunt3){
-        background-image: url("../images/bg2-desktop.jpg");
+        background-image: url("../../images/bg1-desktop.jpg");
         background-size: 100%;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
     }
     @media (min-width: $breekpunt4){
-        background-image: url("../images/bg2-grotedesktop.jpg");
+        background-image: url("../../images/bg1-grotedesktop.jpg");
         background-size: 100%;
     }
 }
@@ -135,7 +135,7 @@ illustratie sjaal
 display: none;
     @media (min-width: $breekpunt3){
     display: block;
-    background-image: url("../images/snake-3.png");
+    background-image: url("../../images/snake1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;}
@@ -145,7 +145,7 @@ display: none;
 }
 
   /* *************************************************************************
-INTRO VOORKOMEN
+INTRO INDEX
 ************************************************************************* */
 .intro{
     background-color:$color3;
@@ -176,20 +176,19 @@ INTRO VOORKOMEN
         text-align: right;
         padding-right: 10px;
         padding-top: 20px;
-        padding-bottom: 30px;
         @media (min-width: $breekpunt2){
             font-size: 28px;
         }
         @media (min-width: $breekpunt3){
             font-size: 60px;
             text-align: center;
-            padding-bottom: 0px;
         }
     }
     p{
         color: $color2;
         font-family: $font2;
         font-size: 16px;
+        padding-top: 40px;
         text-align: left;
         @media (min-width: $breekpunt2){
             font-size: 18px;
@@ -197,118 +196,68 @@ INTRO VOORKOMEN
         }
         @media (min-width: $breekpunt3){
             font-size: 18px;
-            padding-top: 40px;
+            padding-top: 60px;
             text-align: right;
             padding-right: 30px;
         }
     }
     }
   /* *************************************************************************
-VOORKOMEN
+SYMPTOMEN
 ************************************************************************* */
-.vermijden-img{
-    background-image: url("../images/vermijden-colltrui.png");
+.vraag-symptomen{
+    margin-top: 60px;
+    font-family: $font1;
+    font-size: 24px;
+    color: $color2;
+    margin-left: 20px;
+
+    @media (min-width: $breekpunt2){
+        margin-left: 0px;
+    }
+    @media (min-width: $breekpunt3){
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+}
+.row .symptomen{
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @media(min-width: $breekpunt2){
+        margin-left: -150px;
+        margin-right: 100px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $breekpunt3){
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-left: 100px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+}
+.symptoom-img{
     width: 200px;
-    height: 200px;
-    margin-left: 60px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-
-    @media (min-width: $breekpunt2){
-        width: 250px;
-        height: 250px;
-        margin-left: -60px;
-        margin-top: 30px;
-        padding: 0px;
-    }
-    @media (min-width: $breekpunt3){
-        width: 300px;
-        height: 300px;
-        margin: 0px 0px 0px 0px;
-    }
-    @media (min-width: $breekpunt4){
-        width: 350px;
-        height: 350px;
-    }
+    height: auto;
+    margin-bottom: 20px;
 }
-.colltrui{
-    background-image: url("../images/vermijden-colltrui.png");
-    background-size: 100%;
-    background-color: $color4;
-    @media (min-width: $breekpunt3){
-        background-color: transparent;
-    }
+.symptoom-text{
+    color: $color1;
+    font-family: $font2;
+    font-size: 18px;
+    text-align: center;
 }
-.rits{
-    background-image: url("../images/vermijden-rits.png");
-    background-size: 100%;
-    background-color: $color4;
-    @media (min-width: $breekpunt3){
-        background-color: transparent;
-    }
+.right{
+    margin-bottom: 50px;
 }
-.haardos{
-    background-image: url("../images/vermijden-langehaardos.png");
-    background-size: 100%;
-    background-color: $color4;
-    @media (min-width: $breekpunt3){
-        background-color: transparent;
-        margin-top: -20px;
-    }
-}
-.kussen{
-    background-image: url("../images/vermijden-kersenpitkussen.png");
-    background-size: 100%;
-    background-color: $color4;
-    @media (min-width: $breekpunt3){
-        background-color: transparent;
-        margin-top: -40px;
-    }
-}
-.vermijden-txt{
-    margin-left: 170px;
-    margin-right: 20px;
-
-    @media (min-width: $breekpunt2){
-        margin-top: 30px;
-        margin-left: -40px;
-        margin-right: 90px;
-    }
-    @media (min-width: $breekpunt3){
-        margin-top: 40px;
-        margin-right: 140px;
-    }
-    @media (min-width: $breekpunt4){
-        margin-right: 200px;
-    }
-    h4{
-        font-family: $font1;
-        font-size: 24px;
-        color: $color4;
-    @media (min-width: $breekpunt2){
-        color: $color1;
-    }
-    }
-    p{
-        font-family: $font2;
-        font-size: 16px;
-        color: $color1;
-    @media (min-width: $breekpunt2){
-        color: $color4;
-    }
-    }
-}
-.vermijden-1{
-    margin-top: 20px;
-
-    @media (min-width: $breekpunt3){
-        margin-top: 40px;
-    }
-}
-.vermijden-4{
-    margin-bottom: 30px;
-}
-
  /* *************************************************************************
 FOOTER
 ************************************************************************* */

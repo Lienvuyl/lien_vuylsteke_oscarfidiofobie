@@ -92,7 +92,6 @@ navigatie desktop
     display: block;
     padding-top: 70px;
     padding-left: 30px;
-    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
   }
 }
 
@@ -117,28 +116,29 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1 {
-  background-image: url("../images/bg1-mobiel.jpg");
+  background-image: url("../../images/bg1-mobiel.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url("../images/bg1-tablet.jpg");
+    background-image: url("../../images/bg1-tablet.jpg");
     background-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bg1 {
-    background-image: url("../images/bg1-desktop.jpg");
+    background-image: url("../../images/bg1-desktop.jpg");
     background-size: 100%;
+    background-repeat: repeat-y;
   }
 }
 
 @media (min-width: 1200px) {
   .bg1 {
-    background-image: url("../images/bg1-grotedesktop.jpg");
+    background-image: url("../../images/bg1-grotedesktop.jpg");
     background-size: 100%;
   }
 }
@@ -153,7 +153,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../images/snake-4.png");
+    background-image: url("../../images/snake-5.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;
@@ -167,185 +167,97 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-WEEK SCHEMA
+CROWDFUNDING
 ************************************************************************* */
-.uitleg {
-  margin-top: 20px;
-}
-
-.uitleg p {
+.crowdfunding-titel h1 {
   font-family: "Saira", sans-serif;
-  font-size: 12px;
+  font-size: 50px;
   color: #F2E9DF;
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
-@media (min-width: 992px) {
-  .uitleg p {
-    color: #95B4F2;
-    font-size: 18px;
-    margin-left: 20px;
-  }
+.intro {
+  margin-top: 40px;
 }
 
 @media (min-width: 1200px) {
-  .uitleg p {
-    margin-left: 80px;
+  .intro {
+    margin-left: 100px;
+    margin-bottom: 40px;
   }
 }
 
-.uitleg .groep {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  padding: 5px;
-  color: #F2E9DF;
-  text-align: right;
-  margin-left: 90px;
-  margin-right: 40px;
-}
-
-@media (min-width: 768px) {
-  .uitleg .groep {
-    color: #FE9C8F;
-  }
-}
-
-.uitleg .A {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #95B4F2;
-          text-decoration-color: #95B4F2;
-}
-
-.uitleg .B {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #F2E9DF;
-          text-decoration-color: #F2E9DF;
-}
-
-.uitleg .C {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #FE9C8F;
-          text-decoration-color: #FE9C8F;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-  .uitleg .C {
-    margin-bottom: 0px;
-  }
-}
-
-.week {
-  background-color: #B7CCF5;
-  width: 80%;
-  height: 300px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  .week {
-    width: 10px;
-  }
-}
-
-@media (min-width: 992px) {
-  .week {
-    width: 100px;
-    margin-right: 10px;
-    height: 450px;
-  }
-}
-
-.week h2 {
+.intro h2 {
   font-family: "Saira", sans-serif;
-  font-size: 16px;
-  padding: 10px;
+  font-size: 30px;
   color: #FE9C8F;
 }
 
-.week p {
+.intro p {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  color: white;
-  padding: 10px;
+  font-size: 18px;
+  color: #F2E9DF;
 }
 
-@media (min-width: 992px) {
-  .week p {
-    padding: 5px;
+@media (min-width: 1200px) {
+  .intro p {
+    color: #95B4F2;
   }
 }
 
-.week .groep-A, .week .groep-B, .week .groep-C {
-  border-width: 1px;
-  width: 50%;
-  margin-left: 20px;
+.uitleg {
+  text-align: right;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
-@media (min-width: 992px) {
-  .week .groep-A, .week .groep-B, .week .groep-C {
-    margin-left: 10px;
-    width: 80%;
+.uitleg h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #FE9C8F;
+}
+
+@media (min-width: 1200px) {
+  .progress {
+    margin-left: 120px;
+    margin-right: 50px;
   }
 }
 
-.week .groep-A {
-  border-style: solid;
-  border-color: #95B4F2;
+.btn {
+  background-color: #FE9C8F;
+  border-style: none;
+  font-family: "Saira", sans-serif;
+  margin-bottom: 40px;
+  margin-left: 100px;
 }
 
-.week .groep-B {
-  border-style: solid;
-  border-color: #F2E9DF;
+@media (min-width: 1200px) {
+  .btn {
+    margin-left: 100px;
+  }
 }
 
-.week .groep-C {
+.btn:hover {
+  background-color: #95B4F2;
+}
+
+/* *************************************************************************
+PROGRESS BAR
+************************************************************************* */
+.bg-scarf {
+  background-image: url("../../images/progress-scarf.png");
+  background-size: 100%;
+  background-color: white;
+}
+
+.progress {
   border-style: solid;
   border-color: #FE9C8F;
-}
-
-.weekschema {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*@media (min-width: $breekpunt2){
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }*/
-}
-
-@media (min-width: 992px) {
-  .weekschema {
-    margin-top: 20px;
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -ms-flex-line-pack: stretch;
-        align-content: stretch;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (min-width: 992px) {
-  .eerste-blok, .tweede-blok, .derde-blok {
-    height: 100px;
-    margin-bottom: 20px;
-  }
+  border-width: 1px;
+  background-color: white;
+  height: 30px;
 }
 
 /* *************************************************************************
@@ -423,4 +335,4 @@ label, input {
   background-color: #F2E9DF;
   color: #95B4F2;
 }
-/*# sourceMappingURL=style-praatgroep.css.map */
+/*# sourceMappingURL=style-crowdfunding.css.map */

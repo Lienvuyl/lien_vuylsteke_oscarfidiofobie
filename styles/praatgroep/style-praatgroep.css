@@ -117,29 +117,28 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1 {
-  background-image: url("../images/bg2-mobiel.jpg");
+  background-image: url("../../images/bg1-mobiel.jpg");
   background-size: 100%;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url("../images/bg2-tablet.jpg");
+    background-image: url("../../images/bg1-tablet.jpg");
     background-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bg1 {
-    background-image: url("../images/bg2-desktop.jpg");
+    background-image: url("../../images/bg1-desktop.jpg");
     background-size: 100%;
-    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .bg1 {
-    background-image: url("../images/bg2-grotedesktop.jpg");
+    background-image: url("../../images/bg1-grotedesktop.jpg");
     background-size: 100%;
   }
 }
@@ -154,7 +153,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../images/snake-3.png");
+    background-image: url("../../images/snake-4.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;
@@ -168,236 +167,185 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-INTRO VOORKOMEN
+WEEK SCHEMA
 ************************************************************************* */
-.intro {
-  background-color: #F2E9DF;
-  margin: auto;
-  margin-top: 30px;
-  padding: 20px 30px 20px 30px;
-  width: 90%;
-  text-align: left;
+.uitleg {
+  margin-top: 20px;
 }
 
-@media (min-width: 768px) {
-  .intro {
-    margin-top: 50px;
-    margin-left: -60px;
-    padding-bottom: 30px;
-  }
+.uitleg p {
+  font-family: "Saira", sans-serif;
+  font-size: 12px;
+  color: #F2E9DF;
 }
 
 @media (min-width: 992px) {
-  .intro {
-    width: 100%;
-    margin-top: 70px;
+  .uitleg p {
+    color: #95B4F2;
+    font-size: 18px;
+    margin-left: 20px;
   }
 }
 
 @media (min-width: 1200px) {
-  .intro {
-    width: 100%;
-    margin-top: 70px;
+  .uitleg p {
+    margin-left: 80px;
   }
 }
 
-.intro h1 {
-  color: #95B4F2;
-  font-family: "Saira", sans-serif;
-  font-size: 28px;
-  text-transform: uppercase;
-  text-align: right;
-  padding-right: 10px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .intro h1 {
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 992px) {
-  .intro h1 {
-    font-size: 60px;
-    text-align: center;
-    padding-bottom: 0px;
-  }
-}
-
-.intro p {
-  color: #95B4F2;
+.uitleg .groep {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  text-align: left;
+  font-size: 12px;
+  padding: 5px;
+  color: #F2E9DF;
+  text-align: right;
+  margin-left: 90px;
+  margin-right: 40px;
 }
 
 @media (min-width: 768px) {
-  .intro p {
-    font-size: 18px;
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .intro p {
-    font-size: 18px;
-    padding-top: 40px;
-    text-align: right;
-    padding-right: 30px;
-  }
-}
-
-/* *************************************************************************
-VOORKOMEN
-************************************************************************* */
-.vermijden-img {
-  background-image: url("../images/vermijden-colltrui.png");
-  width: 200px;
-  height: 200px;
-  margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .vermijden-img {
-    width: 250px;
-    height: 250px;
-    margin-left: -60px;
-    margin-top: 30px;
-    padding: 0px;
-  }
-}
-
-@media (min-width: 992px) {
-  .vermijden-img {
-    width: 300px;
-    height: 300px;
-    margin: 0px 0px 0px 0px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .vermijden-img {
-    width: 350px;
-    height: 350px;
-  }
-}
-
-.colltrui {
-  background-image: url("../images/vermijden-colltrui.png");
-  background-size: 100%;
-  background-color: #B7CCF5;
-}
-
-@media (min-width: 992px) {
-  .colltrui {
-    background-color: transparent;
-  }
-}
-
-.rits {
-  background-image: url("../images/vermijden-rits.png");
-  background-size: 100%;
-  background-color: #B7CCF5;
-}
-
-@media (min-width: 992px) {
-  .rits {
-    background-color: transparent;
-  }
-}
-
-.haardos {
-  background-image: url("../images/vermijden-langehaardos.png");
-  background-size: 100%;
-  background-color: #B7CCF5;
-}
-
-@media (min-width: 992px) {
-  .haardos {
-    background-color: transparent;
-    margin-top: -20px;
-  }
-}
-
-.kussen {
-  background-image: url("../images/vermijden-kersenpitkussen.png");
-  background-size: 100%;
-  background-color: #B7CCF5;
-}
-
-@media (min-width: 992px) {
-  .kussen {
-    background-color: transparent;
-    margin-top: -40px;
-  }
-}
-
-.vermijden-txt {
-  margin-left: 170px;
-  margin-right: 20px;
-}
-
-@media (min-width: 768px) {
-  .vermijden-txt {
-    margin-top: 30px;
-    margin-left: -40px;
-    margin-right: 90px;
-  }
-}
-
-@media (min-width: 992px) {
-  .vermijden-txt {
-    margin-top: 40px;
-    margin-right: 140px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .vermijden-txt {
-    margin-right: 200px;
-  }
-}
-
-.vermijden-txt h4 {
-  font-family: "Saira", sans-serif;
-  font-size: 24px;
-  color: #B7CCF5;
-}
-
-@media (min-width: 768px) {
-  .vermijden-txt h4 {
+  .uitleg .groep {
     color: #FE9C8F;
   }
 }
 
-.vermijden-txt p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #FE9C8F;
+.uitleg .A {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #95B4F2;
+          text-decoration-color: #95B4F2;
 }
 
-@media (min-width: 768px) {
-  .vermijden-txt p {
-    color: #B7CCF5;
-  }
+.uitleg .B {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #F2E9DF;
+          text-decoration-color: #F2E9DF;
 }
 
-.vermijden-1 {
-  margin-top: 20px;
+.uitleg .C {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #FE9C8F;
+          text-decoration-color: #FE9C8F;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 992px) {
-  .vermijden-1 {
-    margin-top: 40px;
+  .uitleg .C {
+    margin-bottom: 0px;
   }
 }
 
-.vermijden-4 {
-  margin-bottom: 30px;
+.week {
+  background-color: #B7CCF5;
+  width: 80%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .week {
+    width: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .week {
+    width: 100px;
+    margin-right: 10px;
+    height: 450px;
+  }
+}
+
+.week h2 {
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: #FE9C8F;
+}
+
+.week p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: white;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .week p {
+    padding: 5px;
+  }
+}
+
+.week .groep-A, .week .groep-B, .week .groep-C {
+  border-width: 1px;
+  width: 50%;
+  margin-left: 20px;
+}
+
+@media (min-width: 992px) {
+  .week .groep-A, .week .groep-B, .week .groep-C {
+    margin-left: 10px;
+    width: 80%;
+  }
+}
+
+.week .groep-A {
+  border-style: solid;
+  border-color: #95B4F2;
+}
+
+.week .groep-B {
+  border-style: solid;
+  border-color: #F2E9DF;
+}
+
+.week .groep-C {
+  border-style: solid;
+  border-color: #FE9C8F;
+}
+
+.weekschema {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*@media (min-width: $breekpunt2){
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }*/
+}
+
+@media (min-width: 992px) {
+  .weekschema {
+    margin-top: 20px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .eerste-blok, .tweede-blok, .derde-blok {
+    height: 100px;
+    margin-bottom: 20px;
+  }
 }
 
 /* *************************************************************************
@@ -475,4 +423,4 @@ label, input {
   background-color: #F2E9DF;
   color: #95B4F2;
 }
-/*# sourceMappingURL=style-vermijden.css.map */
+/*# sourceMappingURL=style-praatgroep.css.map */

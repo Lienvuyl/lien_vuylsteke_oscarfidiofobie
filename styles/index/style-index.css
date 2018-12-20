@@ -92,7 +92,6 @@ navigatie desktop
     display: block;
     padding-top: 70px;
     padding-left: 30px;
-    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
   }
 }
 
@@ -117,21 +116,21 @@ navigatie desktop
 achtergrond
 ************************************************************************* */
 .bg1 {
-  background-image: url("../images/bg1-mobiel.jpg");
+  background-image: url("../../images/bg1-mobiel.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
   .bg1 {
-    background-image: url("../images/bg1-tablet.jpg");
+    background-image: url("../../images/bg1-tablet.jpg");
     background-size: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bg1 {
-    background-image: url("../images/bg1-desktop.jpg");
+    background-image: url("../../images/bg1-desktop.jpg");
     background-size: 100%;
     background-repeat: repeat-y;
   }
@@ -139,7 +138,7 @@ achtergrond
 
 @media (min-width: 1200px) {
   .bg1 {
-    background-image: url("../images/bg1-grotedesktop.jpg");
+    background-image: url("../../images/bg1-grotedesktop.jpg");
     background-size: 100%;
   }
 }
@@ -154,7 +153,7 @@ illustratie sjaal
 @media (min-width: 992px) {
   .ill-scarf {
     display: block;
-    background-image: url("../images/snake-5.png");
+    background-image: url("../../images/snake1.png");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 800px;
@@ -168,97 +167,160 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-CROWDFUNDING
+INTRO INDEX
 ************************************************************************* */
-.crowdfunding-titel h1 {
-  font-family: "Saira", sans-serif;
-  font-size: 50px;
-  color: #F2E9DF;
-  margin-bottom: 20px;
-  margin-top: 50px;
+.intro {
+  background-color: #F2E9DF;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 30px 20px 30px;
+  width: 90%;
+  text-align: left;
 }
 
-.intro {
-  margin-top: 40px;
+@media (min-width: 768px) {
+  .intro {
+    margin-top: 50px;
+    margin-left: -60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro {
+    width: 100%;
+    margin-top: 70px;
+  }
 }
 
 @media (min-width: 1200px) {
   .intro {
-    margin-left: 100px;
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+.intro h1 {
+  color: #95B4F2;
+  font-family: "Saira", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .intro h1 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+.intro p {
+  color: #95B4F2;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding-top: 40px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .intro p {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro p {
+    font-size: 18px;
+    padding-top: 60px;
+    text-align: right;
+    padding-right: 30px;
+  }
+}
+
+/* *************************************************************************
+SYMPTOMEN
+************************************************************************* */
+.vraag-symptomen {
+  margin-top: 60px;
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: #95B4F2;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .vraag-symptomen {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vraag-symptomen {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vraag-symptomen {
+    margin-left: 150px;
+    margin-bottom: 20px;
+  }
+}
+
+.row .symptomen {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (min-width: 768px) {
+  .row .symptomen {
+    margin-left: -150px;
+    margin-right: 100px;
     margin-bottom: 40px;
   }
 }
 
-.intro h2 {
-  font-family: "Saira", sans-serif;
-  font-size: 30px;
-  color: #FE9C8F;
-}
-
-.intro p {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #F2E9DF;
-}
-
-@media (min-width: 1200px) {
-  .intro p {
-    color: #95B4F2;
+@media (min-width: 992px) {
+  .row .symptomen {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
-.uitleg {
-  text-align: right;
-  margin-bottom: 60px;
-  margin-top: 30px;
-}
-
-.uitleg h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #FE9C8F;
-}
-
 @media (min-width: 1200px) {
-  .progress {
-    margin-left: 120px;
-    margin-right: 50px;
-  }
-}
-
-.btn {
-  background-color: #FE9C8F;
-  border-style: none;
-  font-family: "Saira", sans-serif;
-  margin-bottom: 40px;
-  margin-left: 100px;
-}
-
-@media (min-width: 1200px) {
-  .btn {
+  .row .symptomen {
     margin-left: 100px;
+    margin-bottom: 0px;
+    margin-top: 20px;
   }
 }
 
-.btn:hover {
-  background-color: #95B4F2;
+.symptoom-img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-/* *************************************************************************
-PROGRESS BAR
-************************************************************************* */
-.bg-scarf {
-  background-image: url("../images/progress-scarf.png");
-  background-size: 100%;
-  background-color: white;
+.symptoom-text {
+  color: #FE9C8F;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 
-.progress {
-  border-style: solid;
-  border-color: #FE9C8F;
-  border-width: 1px;
-  background-color: white;
-  height: 30px;
+.right {
+  margin-bottom: 50px;
 }
 
 /* *************************************************************************
@@ -336,4 +398,4 @@ label, input {
   background-color: #F2E9DF;
   color: #95B4F2;
 }
-/*# sourceMappingURL=style-crowdfunding.css.map */
+/*# sourceMappingURL=style-index.css.map */
