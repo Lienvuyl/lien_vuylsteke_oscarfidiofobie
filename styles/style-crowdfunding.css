@@ -169,55 +169,6 @@ illustratie sjaal
 /* *************************************************************************
 CROWDFUNDING
 ************************************************************************* */
-.crowdfunding-titel h1 {
-  font-family: "Saira", sans-serif;
-  font-size: 50px;
-  color: #F2E9DF;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.intro {
-  margin-top: 40px;
-}
-
-@media (min-width: 1200px) {
-  .intro {
-    margin-left: 100px;
-    margin-bottom: 40px;
-  }
-}
-
-.intro h2 {
-  font-family: "Saira", sans-serif;
-  font-size: 30px;
-  color: #FE9C8F;
-}
-
-.intro p {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #F2E9DF;
-}
-
-@media (min-width: 1200px) {
-  .intro p {
-    color: #95B4F2;
-  }
-}
-
-.uitleg {
-  text-align: right;
-  margin-bottom: 60px;
-  margin-top: 30px;
-}
-
-.uitleg h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  color: #FE9C8F;
-}
-
 @media (min-width: 1200px) {
   .progress {
     margin-left: 120px;
@@ -244,6 +195,55 @@ CROWDFUNDING
 }
 
 /* *************************************************************************
+CROWDFUNDING CONTENT
+************************************************************************* */
+.rechterkolom {
+  background-color: #FE9C8F;
+  margin-bottom: 30px;
+}
+
+.rechterkolom h2 {
+  color: #F2E9DF;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  font-family: "Saira", sans-serif;
+}
+
+.rechterkolom .lijst {
+  list-style: none;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.rechterkolom .lijst h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #FE9C8F;
+  background-color: white;
+  padding: 10px;
+  padding-left: 5px;
+  border-radius: 25px;
+}
+
+.rechterkolom .lijst p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.rechterkolom .lijst-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 20px;
+}
+
+/* *************************************************************************
 PROGRESS BAR
 ************************************************************************* */
 .bg-scarf {
@@ -258,6 +258,31 @@ PROGRESS BAR
   border-width: 1px;
   background-color: white;
   height: 30px;
+}
+
+.progress h5 {
+  font-family: "Saira", sans-serif;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.uitleg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.uitleg h4 {
+  padding-top: 10px;
+  font-family: "Saira", sans-serif;
+  color: #FE9C8F;
+  font-size: 12px;
 }
 
 /* *************************************************************************
