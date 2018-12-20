@@ -155,10 +155,10 @@ INTRO
     margin-top: 30px;
     padding: 20px 30px 20px 30px;
     width: 90%;
-    text-align: left;
+    text-align: right;
     @media (min-width: $breekpunt2){
         margin-top: 50px;
-        margin-left: -50px;
+        margin-left: -90px;
         padding-bottom: 30px;
     }
     @media (min-width: $breekpunt3){
@@ -176,7 +176,7 @@ INTRO
         font-size: 28px;
         text-transform: uppercase;
         text-align: right;
-        padding-right: 10px;
+        padding-right: 20px;
         padding-top: 20px;
         padding-bottom: 30px;
         @media (min-width: $breekpunt2){
@@ -186,6 +186,7 @@ INTRO
             font-size: 60px;
             text-align: left;
             padding-bottom: 0px;
+            padding-left: 20px;
         }
     }
     p{
@@ -196,6 +197,7 @@ INTRO
         @media (min-width: $breekpunt2){
             font-size: 18px;
             padding-top: 50px;
+            padding-right: 30px;
         }
         @media (min-width: $breekpunt3){
             font-size: 18px;
@@ -209,7 +211,38 @@ INTRO
 /* *************************************************************************
 LINKERKOLOM
 ************************************************************************* */
-
+.linkerkolom{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 15px;
+    @media(min-width:$breekpunt2){
+        margin-left:-90px;
+        margin-right:0px;
+    }
+    @media(min-width:$breekpunt3){
+        padding-left:50px;
+        margin-left:0;
+        margin-top: 50px;
+    }
+    @media(min-width:$breekpunt4){
+        padding-left: 120px;
+    }
+    h2{
+        font-family:$font1;
+        color:$color1;
+        font-size: 24px;
+    }
+    p{
+        font-family:$font2;
+        color:$color2;
+        font-size: 14px;
+    }
+    em{
+        color:$color1;
+        font-style: normal;
+    }
+}
 
   /* *************************************************************************
 RECHTERKOLOM
@@ -219,6 +252,22 @@ RECHTERKOLOM
     margin-bottom: 30px;
     margin-right: 20px;
     margin-left: 20px;
+    @media(min-width: $breekpunt2){
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    @media(min-width:$breekpunt3){
+        padding-right: 50px;
+        max-width: 300px;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @media(min-width:$breekpunt4){
+        margin-left: 20px;
+        max-width: 365px;
+    }
     h2{
         color:$color3;
         padding-top: 20px;
@@ -282,6 +331,17 @@ PROGRESS BAR
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media(min-width:$breekpunt2){
+        margin-left: -90px;
+    }
+    @media(min-width:$breekpunt3){
+        margin-left: 38px;
+        padding-right: 80px;
+    }
+    @media(min-width:$breekpunt4){
+        margin-left: 100px;
+        padding-right: 140px;
+    }
     h4{
         padding-top: 10px;
         font-family: $font1;
@@ -289,23 +349,45 @@ PROGRESS BAR
         font-size: 12px;}
 }
 .progress{
+    @media(min-width:$breekpunt2){
+        margin-left: -90px;
+    }
+    @media(min-width:$breekpunt3){
+        margin-left:38px;
+        width: 90%;
+    }
     @media (min-width: $breekpunt4){
         margin-left: 120px;
-        margin-right: 50px;
+        margin-right: 40px;
+    }
+    @media (min-width: $breekpunt4){
+        margin-left: 100px;
+        margin-right: 60px;
+        width: 85%;
     }
 }
 .btn{
     background-color: $color1;
     border-style: none;
     font-family: $font1;
-    margin-left: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    @media (min-width:$breekpunt2){
+        margin-left:-170px;
+    }
+    @media (min-width:$breekpunt3){
+        margin-left:0px;
+        margin-top: 20px;
+    }
     @media (min-width: $breekpunt4){
         margin-left: 100px;
     }
 }
 .btn:hover{
     background-color: $color2;
+}
+.knop{
+    display: flex;
+    justify-content: center;
 }
  /* *************************************************************************
 FOOTER
