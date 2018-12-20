@@ -80,6 +80,12 @@ navigatie
   }
 }
 
+@media (min-wdith: 1200px) {
+  .titel {
+    font-size: 45px;
+  }
+}
+
 /**************************************************************************
 navigatie desktop
 ************************************************************************* */
@@ -167,39 +173,100 @@ illustratie sjaal
 }
 
 /* *************************************************************************
-CROWDFUNDING
+INTRO
 ************************************************************************* */
-@media (min-width: 1200px) {
-  .progress {
-    margin-left: 120px;
-    margin-right: 50px;
+.crowdfunding-titel {
+  background-color: #F2E9DF;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px 30px 20px 30px;
+  width: 90%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .crowdfunding-titel {
+    margin-top: 50px;
+    margin-left: -50px;
+    padding-bottom: 30px;
   }
 }
 
-.btn {
-  background-color: #FE9C8F;
-  border-style: none;
+@media (min-width: 992px) {
+  .crowdfunding-titel {
+    width: 100%;
+    margin-top: 70px;
+    margin-left: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .crowdfunding-titel {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+.crowdfunding-titel h1 {
+  color: #95B4F2;
   font-family: "Saira", sans-serif;
-  margin-bottom: 40px;
-  margin-left: 100px;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
-  .btn {
-    margin-left: 100px;
+@media (min-width: 768px) {
+  .crowdfunding-titel h1 {
+    font-size: 28px;
   }
 }
 
-.btn:hover {
-  background-color: #95B4F2;
+@media (min-width: 992px) {
+  .crowdfunding-titel h1 {
+    font-size: 60px;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+}
+
+.crowdfunding-titel p {
+  color: #95B4F2;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .crowdfunding-titel p {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .crowdfunding-titel p {
+    font-size: 18px;
+    padding-top: 40px;
+    text-align: right;
+    padding-right: 30px;
+    padding-left: 200px;
+  }
 }
 
 /* *************************************************************************
-CROWDFUNDING CONTENT
+LINKERKOLOM
+************************************************************************* */
+/* *************************************************************************
+RECHTERKOLOM
 ************************************************************************* */
 .rechterkolom {
   background-color: #FE9C8F;
   margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .rechterkolom h2 {
@@ -212,8 +279,8 @@ CROWDFUNDING CONTENT
 
 .rechterkolom .lijst {
   list-style: none;
-  padding-right: 30px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .rechterkolom .lijst h3 {
@@ -221,8 +288,6 @@ CROWDFUNDING CONTENT
   font-size: 16px;
   color: #FE9C8F;
   background-color: white;
-  padding: 10px;
-  padding-left: 5px;
   border-radius: 25px;
 }
 
@@ -233,6 +298,14 @@ CROWDFUNDING CONTENT
   padding-top: 5px;
 }
 
+.rechterkolom .lijst .getal {
+  padding: 10px;
+}
+
+.rechterkolom .lijst .plus {
+  padding: 10px 6px 10px 6px;
+}
+
 .rechterkolom .lijst-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,6 +313,9 @@ CROWDFUNDING CONTENT
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 20px;
 }
 
@@ -283,6 +359,31 @@ PROGRESS BAR
   font-family: "Saira", sans-serif;
   color: #FE9C8F;
   font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .progress {
+    margin-left: 120px;
+    margin-right: 50px;
+  }
+}
+
+.btn {
+  background-color: #FE9C8F;
+  border-style: none;
+  font-family: "Saira", sans-serif;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .btn {
+    margin-left: 100px;
+  }
+}
+
+.btn:hover {
+  background-color: #95B4F2;
 }
 
 /* *************************************************************************
