@@ -146,6 +146,23 @@ display: none;
     height: 1000px;
     }
 }
+.ill-scarf-mobile{
+    background-image: url("../images/snake-5-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin-top: -50px;
+    margin-bottom: 0;
+    @media (min-width:$breekpunt1){
+        height: 120px;
+    }
+    @media (min-width:$breekpunt2){
+        height: 170px;
+    }
+    @media (min-width: $breekpunt3){
+        display: none;
+    }
+}
   /* *************************************************************************
 INTRO
 ************************************************************************* */ 

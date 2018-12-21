@@ -83,23 +83,24 @@ getuigenissen
 ************************************************************************* */
 .inleiding{
     font-family: $font1;
-    font-size: 40px;
-    margin-left: 10px;
-    margin-right: 20px;
-    margin-top: 40px;
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: right;
     color: $color1;
     @media (min-width: $breekpunt1){
         text-align: left;
-        font-size: 32px;
+        font-size: 24px;
         margin-left: 90px;
-        margin-right: 40px;
+        margin-right: 30px;
     }
     @media (min-width: $breekpunt2){
         text-align: right;
         margin-bottom: 10px;
         margin-top: 20px;
+        margin-right: 110px;
     }
     @media (min-width: $breekpunt3){
         font-size: 32px;
@@ -111,6 +112,7 @@ getuigenissen
     }
     @media (min-width: $breekpunt4){
         margin-right: 300px;
+        margin-bottom: 30px;
     }
 }
 .getuigenissen-1{
@@ -125,14 +127,14 @@ getuigenissen
 
 .img__wrap{
     position: relative;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 80px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
     margin-left: 50px;
-    margin-right: 30px;
+    margin-right: 50px;
     padding: 0;
     @media (min-width: $breekpunt1){
-        margin-left: 100px;
+        margin-left: 150px;
         margin-right: 0px;
     }
     @media (min-width: $breekpunt2){
@@ -154,8 +156,8 @@ getuigenissen
     }
 }
 .img-getuigenissen{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 
     @media (min-width: $breekpunt2){
         width: 150px;
@@ -181,8 +183,8 @@ getuigenissen
     color:white;
     visibility: hidden;
     opacity: 0;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     @media (min-width: $breekpunt2){
         width: 150px;
         height: 150px;
@@ -199,20 +201,21 @@ getuigenissen
  
     p{
         font-family: $font2;
-        font-size: 18px;
-        color: $color3;
+        font-size: 14px;
+        color: white;
         padding: 10px;
         position: absolute;
-        top: 20%;
+        top: 10%;
         left: 10%;
         right: 10%;
     @media (min-width: $breekpunt2){
         font-size: 12px;
         top: 5%;
         left: 5%;
+        right: 5%;
     }
     @media (min-width: $breekpunt3){
-        font-size: 16px;
+        font-size: 14px;
         left: 10px;
         top: 10px;
     }
@@ -292,7 +295,23 @@ display: none;
     height: 900px;
     }
 }
-
+.ill-scarf-mobile{
+    background-image: url("../images/snake-4-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    @media (min-width:$breekpunt1){
+        height: 120px;
+    }
+    @media (min-width:$breekpunt2){
+        height: 170px;
+    }
+    @media (min-width: $breekpunt3){
+        display: none;
+    }
+}
   /* *************************************************************************
 INTRO VOORKOMEN
 ************************************************************************* */

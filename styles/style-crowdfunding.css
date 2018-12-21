@@ -172,6 +172,33 @@ illustratie sjaal
   }
 }
 
+.ill-scarf-mobile {
+  background-image: url("../images/snake-5-mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: -50px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 560px) {
+  .ill-scarf-mobile {
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ill-scarf-mobile {
+    height: 170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ill-scarf-mobile {
+    display: none;
+  }
+}
+
 /* *************************************************************************
 INTRO
 ************************************************************************* */
