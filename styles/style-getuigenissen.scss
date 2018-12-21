@@ -72,9 +72,12 @@ navigatie
         padding: 20px 75px 0px 0px;
         text-align: right; 
         color: $color1;
+        margin-right: 10px;
     } 
+    @media (min-width: $breekpunt4){
+       margin-right: 130px;
+    }
 }
-
 /**************************************************************************
 getuigenissen
 ************************************************************************* */

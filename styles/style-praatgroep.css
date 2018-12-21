@@ -77,6 +77,13 @@ navigatie
     padding: 20px 75px 0px 0px;
     text-align: right;
     color: #FE9C8F;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titel {
+    margin-right: 130px;
   }
 }
 
@@ -92,7 +99,6 @@ navigatie desktop
     display: block;
     padding-top: 70px;
     padding-left: 30px;
-    /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
   }
 }
 
@@ -133,6 +139,7 @@ achtergrond
   .bg1 {
     background-image: url("../images/bg1-desktop.jpg");
     background-size: 100%;
+    background-repeat: repeat-y;
   }
 }
 
@@ -160,9 +167,30 @@ illustratie sjaal
   }
 }
 
-@media (min-width: 1200px) {
-  .ill-scarf {
-    height: 1000px;
+.ill-scarf-mobile {
+  background-image: url("../images/snake-2-mobile.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: -50px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 560px) {
+  .ill-scarf-mobile {
+    height: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ill-scarf-mobile {
+    height: 190px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ill-scarf-mobile {
+    display: none;
   }
 }
 
@@ -171,6 +199,9 @@ WEEK SCHEMA
 ************************************************************************* */
 .uitleg {
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .uitleg p {
@@ -179,11 +210,19 @@ WEEK SCHEMA
   color: #F2E9DF;
 }
 
+@media (min-width: 768px) {
+  .uitleg p {
+    margin-right: 120px;
+    margin-left: -30px;
+  }
+}
+
 @media (min-width: 992px) {
   .uitleg p {
     color: #95B4F2;
     font-size: 18px;
     margin-left: 20px;
+    text-align: left;
   }
 }
 
@@ -193,35 +232,64 @@ WEEK SCHEMA
   }
 }
 
-.uitleg .groep {
+.uitleg .a, .uitleg .b, .uitleg .c {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   padding: 5px;
-  color: #F2E9DF;
-  text-align: right;
-  margin-left: 90px;
-  margin-right: 40px;
+  color: #FE9C8F;
+  text-align: center;
 }
 
-@media (min-width: 768px) {
-  .uitleg .groep {
-    color: #FE9C8F;
+@media (min-width: 560px) {
+  .uitleg .a, .uitleg .b, .uitleg .c {
+    color: white;
   }
 }
 
-.uitleg .A {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #95B4F2;
-          text-decoration-color: #95B4F2;
+@media (min-width: 768px) {
+  .uitleg .a, .uitleg .b, .uitleg .c {
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+  }
 }
 
-.uitleg .B {
+@media (min-width: 992px) {
+  .uitleg .a, .uitleg .b, .uitleg .c {
+    color: #FE9C8F;
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uitleg .a, .uitleg .b, .uitleg .c {
+    margin-right: 50px;
+  }
+}
+
+.uitleg .a {
+  text-decoration: underline;
+  -webkit-text-decoration-line: 10px;
+          text-decoration-line: 10px;
+  -webkit-text-decoration-color: #95B4F2;
+          text-decoration-color: #95B4F2;
+  margin-top: 40px;
+}
+
+@media (min-width: 560px) {
+  .uitleg .a {
+    margin-top: 20px;
+  }
+}
+
+.uitleg .b {
   text-decoration: underline;
   -webkit-text-decoration-color: #F2E9DF;
           text-decoration-color: #F2E9DF;
 }
 
-.uitleg .C {
+.uitleg .c {
   text-decoration: underline;
   -webkit-text-decoration-color: #FE9C8F;
           text-decoration-color: #FE9C8F;
@@ -229,7 +297,7 @@ WEEK SCHEMA
 }
 
 @media (min-width: 992px) {
-  .uitleg .C {
+  .uitleg .c {
     margin-bottom: 0px;
   }
 }
@@ -237,68 +305,95 @@ WEEK SCHEMA
 .week {
   background-color: #B7CCF5;
   width: 80%;
-  height: 300px;
+  height: auto;
+  margin-left: 25px;
   margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
   .week {
-    width: 10px;
+    width: 85%;
+    margin-left: -30px;
+    margin-right: 50px;
   }
 }
 
 @media (min-width: 992px) {
   .week {
-    width: 100px;
-    margin-right: 10px;
+    width: 15%;
     height: 450px;
   }
 }
 
-.week h2 {
+h2 {
   font-family: "Saira", sans-serif;
   font-size: 16px;
-  padding: 10px;
   color: #FE9C8F;
 }
 
-.week p {
+.short {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .short {
+    display: block;
+    padding: 12px;
+  }
+}
+
+.long {
+  display: block;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .long {
+    display: none;
+  }
+}
+
+p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: white;
   padding: 10px;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 992px) {
-  .week p {
+  p {
     padding: 5px;
   }
 }
 
-.week .groep-A, .week .groep-B, .week .groep-C {
-  border-width: 1px;
-  width: 50%;
+.groep-a, .groep-b, .groep-c {
+  border-width: 2px;
+  width: 80%;
   margin-left: 20px;
+  margin-bottom: 10px;
+  color: #FE9C8F;
 }
 
 @media (min-width: 992px) {
-  .week .groep-A, .week .groep-B, .week .groep-C {
-    margin-left: 10px;
+  .groep-a, .groep-b, .groep-c {
+    margin-left: 8px;
     width: 80%;
   }
 }
 
-.week .groep-A {
+.groep-a {
   border-style: solid;
   border-color: #95B4F2;
 }
 
-.week .groep-B {
+.groep-b {
   border-style: solid;
   border-color: #F2E9DF;
 }
 
-.week .groep-C {
+.groep-c {
   border-style: solid;
   border-color: #FE9C8F;
 }
@@ -316,36 +411,57 @@ WEEK SCHEMA
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*@media (min-width: $breekpunt2){
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }*/
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .weekschema {
+    padding-right: 170px;
+  }
 }
 
 @media (min-width: 992px) {
   .weekschema {
+    padding-right: 20px;
+    padding-left: 20px;
     margin-top: 20px;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media (min-width: 992px) {
   .eerste-blok, .tweede-blok, .derde-blok {
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
+}
+
+.eerste-blok-leeg, .tweede-blok-leeg, .derde-blok-leeg {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .eerste-blok-leeg, .tweede-blok-leeg, .derde-blok-leeg {
+    display: inline;
+  }
+}
+
+.eerste-blok-leeg h4, .tweede-blok-leeg h4, .derde-blok-leeg h4 {
+  padding-bottom: 12px;
 }
 
 /* *************************************************************************

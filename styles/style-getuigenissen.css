@@ -77,6 +77,13 @@ navigatie
     padding: 20px 75px 0px 0px;
     text-align: right;
     color: #FE9C8F;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titel {
+    margin-right: 130px;
   }
 }
 

@@ -73,7 +73,11 @@ navigatie
         padding: 20px 75px 0px 0px;
         text-align: right; 
         color: $color1;
+        margin-right: 10px;
     } 
+    @media (min-width: $breekpunt4){
+       margin-right: 130px;
+    }
 }
 
 /**************************************************************************
@@ -84,7 +88,7 @@ navigatie desktop
     @media (min-width: $breekpunt3) {
             display: block;
             padding-top: 70px;
-            padding-left: 30px; /* TOONT NIET? MAAR WEL ALS IK INSPECTEER */
+            padding-left: 30px;
     
         }
 }
@@ -120,6 +124,7 @@ achtergrond
     @media (min-width: $breekpunt3){
         background-image: url("../images/bg1-desktop.jpg");
         background-size: 100%;
+        background-repeat: repeat-y;
     }
     @media (min-width: $breekpunt4){
         background-image: url("../images/bg1-grotedesktop.jpg");
@@ -137,9 +142,24 @@ display: none;
     background-image: url("../images/snake-4.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 800px;}
-    @media (min-width: $breekpunt4){
-    height: 1000px;
+    height: 800px;
+    }
+}
+.ill-scarf-mobile{
+    background-image: url("../images/snake-2-mobile.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin-top: -50px;
+    margin-bottom: 0px;
+    @media (min-width:$breekpunt1){
+        height: 140px;
+    }
+    @media (min-width:$breekpunt2){
+        height: 190px;
+    }
+    @media (min-width: $breekpunt3){
+        display: none;
     }
 }
 
@@ -148,40 +168,64 @@ WEEK SCHEMA
 ************************************************************************* */
 .uitleg{
     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
     p{
         font-family: $font1;
         font-size: 12px;
         color: $color3;
+        @media (min-width: $breekpunt2){
+            margin-right: 120px;
+            margin-left: -30px;
+        }
         @media (min-width:$breekpunt3){
             color: $color2;
             font-size: 18px;
             margin-left: 20px;
+            text-align: left;
         }
         @media (min-width: $breekpunt4){
             margin-left: 80px;
         }
     }
-    .groep{
+    .a, .b, .c{
         font-family: $font2;
         font-size: 12px;
         padding: 5px;
-        color: $color3;
-        text-align: right;
-        margin-left: 90px;
-        margin-right: 40px;
+        color: $color1;
+        text-align: center;
+        @media(min-width: $breekpunt1){
+            color: white;
+        }
         @media(min-width: $breekpunt2){
+            color: white;
+            text-align: left; 
+            margin-left: 100px;
+        }
+        @media(min-width: $breekpunt3){
             color: $color1;
+            text-align: right; 
+            margin-right: 10px;
+        }
+        @media(min-width: $breekpunt4){
+            margin-right: 50px;
         }
     }
-    .A{
+    .a{
         text-decoration: underline;
+        text-decoration-line: 10px;
         text-decoration-color: $color2;
+        margin-top: 40px;
+        @media (min-width: $breekpunt1){
+            margin-top: 20px;
+        }    
     }
-    .B{
+    .b{
         text-decoration: underline;
         text-decoration-color: $color3;
     }
-    .C{
+    .c{
         text-decoration: underline;
         text-decoration-color: $color1;
         margin-bottom: 20px;
@@ -193,83 +237,109 @@ WEEK SCHEMA
 .week{
     background-color:$color4;
     width: 80%;
-    height: 300px;
+    height: auto;
+    margin-left: 25px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     @media (min-width: $breekpunt2){
-        width: 10px;
+        width: 85%;
+        margin-left: -30px;
+        margin-right: 50px;
     }
     @media (min-width: $breekpunt3){
-        width: 100px;
-        margin-right: 10px;
+        width: 15%;
         height: 450px;
     }
-    h2{
+}
+    h2 {
         font-family: $font1;
         font-size: 16px;
-        padding: 10px;
         color: $color1;
-    
+        }
+    .short{
+        display: none;
+        @media (min-width:$breekpunt3){
+            display: block;
+            padding: 12px;
+        }
+    }
+    .long{
+        display: block;
+        padding: 10px;
+        @media (min-width:$breekpunt3){
+            display: none;
+        }
     }
     p{
         font-family: $font2;
         font-size: 12px;
-        color: white;;
+        color: white;
         padding: 10px;
+        padding-bottom: 0px;
         @media (min-width: $breekpunt3){
             padding: 5px;
         }
     }
-    .groep-A, .groep-B, .groep-C{
-        border-width: 1px;
-        width: 50%;
+    .groep-a, .groep-b, .groep-c{
+        border-width: 2px;
+        width: 80%;
         margin-left: 20px;
+        margin-bottom: 10px;
+        color: $color1;
         @media (min-width: $breekpunt3){
-            margin-left: 10px;
+            margin-left: 8px;
             width: 80%;
         }
     }
-    .groep-A{
+    .groep-a{
         border-style: solid;
         border-color: $color2;
     }
-    .groep-B{
+    .groep-b{
         border-style: solid; 
         border-color: $color3;
     }
-    .groep-C{
+    .groep-c{
         border-style: solid; 
         border-color: $color1;
-
     }
-}
 .weekschema{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    /*@media (min-width: $breekpunt2){
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }*/
+    margin-left: -15px;
+    @media (min-width: $breekpunt2){
+        padding-right: 170px;
+    }
     @media (min-width: $breekpunt3){
+        padding-right:20px;
+        padding-left: 20px;
         margin-top: 20px;
         width: 100%;
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: stretch;
         align-content: stretch;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 .eerste-blok, .tweede-blok, .derde-blok{
     @media (min-width: $breekpunt3){
         height: 100px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 }
-
-
+.eerste-blok-leeg, .tweede-blok-leeg, .derde-blok-leeg{
+    display: none;
+    @media (min-width:$breekpunt3){
+        display: inline;
+    }
+    h4{
+        padding-bottom: 12px;
+    }
+}
  /* *************************************************************************
 FOOTER
 ************************************************************************* */
@@ -336,6 +406,5 @@ label, input {
     background-color: $color3;
     color: $color2;
 }
-
 
  

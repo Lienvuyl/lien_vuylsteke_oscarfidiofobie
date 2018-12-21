@@ -74,15 +74,15 @@ navigatie
     display: block;
     font-family: "Saira", sans-serif;
     font-size: 38px;
-    padding: 20px 75px 0px 0px;
+    padding: 20px 60px 0px 0px;
     text-align: right;
     color: #FE9C8F;
   }
 }
 
-@media (min-wdith: 1200px) {
+@media (min-width: 1200px) {
   .titel {
-    font-size: 45px;
+    margin-right: 110px;
   }
 }
 

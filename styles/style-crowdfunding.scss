@@ -70,12 +70,12 @@ navigatie
         display: block;
         font-family: $font1;
         font-size: 38px;
-        padding: 20px 75px 0px 0px;
+        padding: 20px 60px 0px 0px;
         text-align: right; 
         color: $color1;
     } 
-    @media (min-wdith: $breekpunt4){
-        font-size: 45px;
+    @media (min-width: $breekpunt4){
+       margin-right: 110px;
     }
 }
 
